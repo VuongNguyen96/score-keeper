@@ -1,7 +1,10 @@
 const p1 = {
     score: 0,
+    //let p1Score = 0;
     button: document.querySelector('#p1Button'),
+    // p1Button = document.querySelector('#p1Button');
     display: document.querySelector('#p1Display')
+    // p1Display = document.querySelector('#p1Display');
 }
 const p2 = {
     score: 0,
@@ -14,6 +17,7 @@ const winningScoreSelect = document.querySelector('#playto');
 let winningScore = 3;
 let isGameOver = false;
 
+// Generic functions to take advantages of the refracturing.
 function updateScores(player, opponent) {
     if (!isGameOver) {
         player.score += 1;
